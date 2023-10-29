@@ -4,22 +4,47 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private Rigidbody _rb;
-    [SerializeField] private float _speed = 5;
-    private Vector3 _input;
+    private float speed = 5.0f;
+    private Rigidbody playerRb;
+    private float zBound = 20;
 
-    void GatherInput()
+    // Start is called before the first frame update
+    void Start()
     {
-        _input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+        playerRb = GetComponent<Rigidbody>();
     }
 
-    void FixedUpdate()
+    // Update is called once per frame
+    void Update()
     {
-        Move();
+
+        MovePlayer();
+        ConstrainPlayerPosition();
+
     }
 
-    void Move()
+    // Moves the player based on arrow key or WASD input
+    void MovePlayer()
     {
-        _rb.MovePosition(transform.position + transform.forward * _speed * Time.deltaTime);
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
+
+        playerRb.AddForce(Vector3.forward * speed * verticalInput);
+        playerRb.AddForce(Vector3.right * speed * horizontalInput);
     }
+
+    // Prevent the player from leaving the top or bottom of the screen
+    void ConstrainPlayerPosition()
+    {
+        if (transform.position.z < -zBound)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, -zBound);
+        }
+
+        if (transform.position.z > zBound)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, zBound);
+        }
+    }
+
 }
