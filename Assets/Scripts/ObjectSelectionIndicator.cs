@@ -12,7 +12,7 @@ public class ObjectSelectionIndicator : MonoBehaviour
         sfxAudio = GetComponent<AudioSource>();
     }
 
-    // Changes item colour to blue when cursor is hovered over
+    // Changes item colour to blue when cursor is hovered over and plays sfx
     private void OnMouseEnter()
     {
         renderer.material.color = Color.blue;
