@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 829079246009229627}
   - component: {fileID: 1179031259486446644}
   - component: {fileID: 584682942372352136}
+  - component: {fileID: 4083225865218293351}
+  - component: {fileID: 6569418191216044361}
   m_Layer: 0
   m_Name: Item
   m_TagString: Interactable Item
@@ -107,3 +109,29 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4083225865218293351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8386946421876099870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7140e20a2eaea428ae6d92ad1cf37a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6569418191216044361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8386946421876099870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42f973a16b72e7a4eb2c8ae33bcae347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 0}
+  forceSize: 10

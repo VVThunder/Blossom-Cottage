@@ -327,6 +327,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6569418191216044361, guid: e9ce9b1d7ddfaad44be771be80f55858, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 963194227}
     - target: {fileID: 8386946421876099870, guid: e9ce9b1d7ddfaad44be771be80f55858, type: 3}
       propertyPath: m_Name
       value: Item (2)
@@ -1829,6 +1833,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6569418191216044361, guid: e9ce9b1d7ddfaad44be771be80f55858, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 963194227}
     - target: {fileID: 8386946421876099870, guid: e9ce9b1d7ddfaad44be771be80f55858, type: 3}
       propertyPath: m_Name
       value: Item (1)
@@ -2272,6 +2280,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6569418191216044361, guid: e9ce9b1d7ddfaad44be771be80f55858, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 963194227}
     - target: {fileID: 8386946421876099870, guid: e9ce9b1d7ddfaad44be771be80f55858, type: 3}
       propertyPath: m_Name
       value: Item
