@@ -17,10 +17,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         MovePlayer();
         ConstrainPlayerPosition();
-
     }
 
     // Moves the player based on arrow key or WASD input
@@ -46,5 +44,4 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(transform.position.x, transform.position.y, zBound);
         }
     }
-
 }
