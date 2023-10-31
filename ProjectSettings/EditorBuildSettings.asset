@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Blossom Cottage Exterior.unity
+    guid: 2c8c861bd215c5e41b26f92885ca31bf
   m_configObjects: {}
