@@ -14,19 +14,19 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            transform.Translate(0.01f, 0f, 0f);
+            transform.Translate(0.03f, 0f, 0f);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            transform.Translate(-0.01f, 0f, 0f);
+            transform.Translate(-0.03f, 0f, 0f);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Translate(0.0f, 0f, -0.01f);
+            transform.Translate(0.0f, 0f, -0.03f);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Translate(0.0f, 0f, 0.01f);
+            transform.Translate(0.0f, 0f, 0.03f);
         }
 
     }
