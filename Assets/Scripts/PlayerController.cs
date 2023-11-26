@@ -1,47 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class PlayerController : MonoBehaviour
-{
-    private float speed = 0.5f;
-    private Rigidbody playerRb;
-    private float zBound = 20;
 
-    // Start is called before the first frame update
+{
     void Start()
     {
-        playerRb = GetComponent<Rigidbody>();
-    }
 
-    // Update is called once per frame
+    }
     void Update()
     {
-        MovePlayer();
-        ConstrainPlayerPosition();
-    }
-
-    // Moves the player based on arrow key or WASD input
-    void MovePlayer()
-    {
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
-
-        playerRb.AddForce(Vector3.forward * speed * verticalInput);
-        playerRb.AddForce(Vector3.right * speed * horizontalInput);
-    }
-
-    // Prevent the player from leaving the top or bottom of the screen
-    void ConstrainPlayerPosition()
-    {
-        if (transform.position.z < -zBound)
+        if (Input.GetKey(KeyCode.W))
         {
-            transform.position = new Vector3(transform.position.x, transform.position.z, -zBound);
+            transform.Translate(0.01f, 0f, 0f);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            transform.Translate(-0.01f, 0f, 0f);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.Translate(0.0f, 0f, -0.01f);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.Translate(0.0f, 0f, 0.01f);
         }
 
-        if (transform.position.z > zBound)
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.z, zBound);
-        }
     }
 }

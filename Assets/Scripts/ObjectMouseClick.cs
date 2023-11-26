@@ -21,6 +21,7 @@ public class ObjectMouseClick : MonoBehaviour
     // Destroys item when clicked on
     private void OnMouseDown()
     {
+        print("You have found an object!");
         Destroy(gameObject);
     }
 
