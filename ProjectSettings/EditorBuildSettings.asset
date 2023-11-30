@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Blossom Cottage Exterior.unity
+    path: Assets/Scenes/Main Menu.unity
+    guid: d4a99a1d8f3df2f409f5237c3512bda8
+  - enabled: 1
+    path: Assets/Scenes/Blossom Cottage.unity
     guid: 2c8c861bd215c5e41b26f92885ca31bf
   m_configObjects: {}
