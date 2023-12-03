@@ -768,19 +768,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 584682942372352136, guid: e9ce9b1d7ddfaad44be771be80f55858, type: 3}
       propertyPath: m_Height
-      value: 6.72604
+      value: 4.189522
       objectReference: {fileID: 0}
     - target: {fileID: 584682942372352136, guid: e9ce9b1d7ddfaad44be771be80f55858, type: 3}
       propertyPath: m_Radius
-      value: 3.36302
+      value: 2.0060375
+      objectReference: {fileID: 0}
+    - target: {fileID: 584682942372352136, guid: e9ce9b1d7ddfaad44be771be80f55858, type: 3}
+      propertyPath: m_Center.x
+      value: 0.0067868233
       objectReference: {fileID: 0}
     - target: {fileID: 584682942372352136, guid: e9ce9b1d7ddfaad44be771be80f55858, type: 3}
       propertyPath: m_Center.y
-      value: 1.1078095
+      value: -0.33326817
       objectReference: {fileID: 0}
     - target: {fileID: 584682942372352136, guid: e9ce9b1d7ddfaad44be771be80f55858, type: 3}
       propertyPath: m_Center.z
-      value: 0.26991463
+      value: 0.32552648
+      objectReference: {fileID: 0}
+    - target: {fileID: 584682942372352136, guid: e9ce9b1d7ddfaad44be771be80f55858, type: 3}
+      propertyPath: m_Direction
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 584682942372352136, guid: e9ce9b1d7ddfaad44be771be80f55858, type: 3}
       propertyPath: m_IsTrigger
@@ -4460,8 +4468,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Item (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 829079246009229627, guid: e9ce9b1d7ddfaad44be771be80f55858, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6262090556389236005, guid: e9ce9b1d7ddfaad44be771be80f55858, type: 3}
