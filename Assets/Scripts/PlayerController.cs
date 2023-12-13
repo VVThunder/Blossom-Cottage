@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
@@ -25,7 +27,8 @@ public class PlayerController : MonoBehaviour
 
     private void Pick_Up()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        //How do I have pick up only play when mouse is over item?
+        if (Input.GetKeyDown(KeyCode.Mouse0)) //&& (CompareTag ("Interactable Item"))//
         {
             this.anim.SetBool("pick up", true);
             //Debug.Log("pick up");//
@@ -44,7 +47,7 @@ public class PlayerController : MonoBehaviour
         Vector3 movement = this.transform.forward * verticalAxis + this.transform.right * horizontalAxis;
         movement.Normalize();
 
-        this.transform.position += movement * 0.03f;
+        this.transform.position += movement * 0.02f;
 
         this.anim.SetFloat("vertical", verticalAxis);
         this.anim.SetFloat("horizontal", horizontalAxis);
