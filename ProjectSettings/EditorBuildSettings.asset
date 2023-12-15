@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Blossom Cottage Exterior.unity
     guid: 2c8c861bd215c5e41b26f92885ca31bf
+  - enabled: 1
+    path: Assets/Scenes/Blossom Cottage Interior.unity
+    guid: 0b6a5ecbb019cad4c81678d288c707a0
   m_configObjects: {}

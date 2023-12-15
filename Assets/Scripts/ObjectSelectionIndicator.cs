@@ -2,26 +2,33 @@ using UnityEngine;
 
 public class ObjectSelectionIndicator : MonoBehaviour
 {
-    private Renderer renderer;
+    public MeshRenderer meshRenderer;
     public AudioClip pickupSound;
     private AudioSource sfxAudio;
+    //public Color originalColour;
+    public Color hoverColour = Color.gray;
 
     void Start()
     {
-        renderer = GetComponent<Renderer>();
+        meshRenderer = GetComponent<MeshRenderer>();
         sfxAudio = GetComponent<AudioSource>();
+        //originalColour = gameObject.GetComponent<Color>();
     }
 
-    // Changes item colour to blue when cursor is hovered over and plays sfx
     private void OnMouseEnter()
     {
-        renderer.material.color = Color.blue;
+
+        // Changes item colour to faded when cursor is hovered over
+        meshRenderer.material.color = hoverColour;
+
+        //Plays sfx when cursor is hovered over
         sfxAudio.PlayOneShot(pickupSound, 1.0f);
     }
 
-    // Changes item colour back to red when cursor is not hovered over
+
     private void OnMouseExit()
     {
-        renderer.material.color = Color.red;
+        // Changes item colour back to default when cursor is not hovered over
+        meshRenderer.material.color = Color.red;
     }
 }

@@ -11,7 +11,7 @@ public class UIHandler : MonoBehaviour
         {
             case "Start":
                 {
-                    SceneManager.LoadScene("Blossom Cottage");
+                    SceneManager.LoadScene("Blossom Cottage Exterior");
                     break;
                 }
             case "Quit":

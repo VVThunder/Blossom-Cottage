@@ -4,13 +4,14 @@ using static UnityEngine.GraphicsBuffer;
 
 public class ObjectMouseClick : MonoBehaviour
 {
-    public Camera camera;
+    public Camera selectionCamera;
     public float forceSize;
-    private Rigidbody rigidbody;
+    private Rigidbody rb;
+    [SerializeField] private string objectName;
 
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -18,10 +19,18 @@ public class ObjectMouseClick : MonoBehaviour
 
     }
 
-    // Destroys item when clicked on
     private void OnMouseDown()
     {
+        //Check how close the player is to the object before allowing pick up
+
+
+        //Call function from playercontroller saying we have picked up(objectName)
+
+
+
         print("You have found an object!");
+
+        // Destroys item when clicked on
         Destroy(gameObject);
     }
 

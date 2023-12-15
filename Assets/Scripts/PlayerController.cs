@@ -8,7 +8,7 @@ using static UnityEngine.GraphicsBuffer;
 public class PlayerController : MonoBehaviour
 
 {
-
+    public bool hasItem = false;
     public Animator anim;
     private Rigidbody rb;
 
@@ -21,13 +21,16 @@ public class PlayerController : MonoBehaviour
 
         Pick_Up();
         Move();
-        Idle();
 
     }
 
     private void Pick_Up()
     {
-        //How do I have pick up only play when mouse is over item?
+        //Check for name of object we have picked up
+        //Play anim of picking up
+
+        //Call audio for pick up here when you pass through a function 
+        
         if (Input.GetKeyDown(KeyCode.Mouse0)) //&& (CompareTag ("Interactable Item"))//
         {
             this.anim.SetBool("pick up", true);
@@ -51,10 +54,5 @@ public class PlayerController : MonoBehaviour
 
         this.anim.SetFloat("vertical", verticalAxis);
         this.anim.SetFloat("horizontal", horizontalAxis);
-    }
-
-    private void Idle()
-    {
-        this.rb.AddForce(Vector3.down * 1 * Time.deltaTime, ForceMode.Impulse);
     }
 }
