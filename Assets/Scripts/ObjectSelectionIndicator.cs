@@ -34,7 +34,7 @@ public class ObjectSelectionIndicator : MonoBehaviour
     private void OnMouseExit()
     {
         //Changes item colour to red when cursor is not hovered over
-        //Want to make this original item colour not red - I tried color, material and shader but none work
+        //Want to make this original item colour not green - I tried color, material and shader but none work
         meshRenderer.material.color = Color.green;
     }
 }

@@ -128,7 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionCamera: {fileID: 0}
   forceSize: 10
-  objectName: 
+  objectName: Box of Mushrooms
 --- !u!114 &2949917493449402584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meshRenderer: {fileID: 517912335175160947}
-  pickupSound: {fileID: 8300000, guid: 4dcdb2020e974154c92a64a5ff508c0d, type: 3}
+  interactSound: {fileID: 8300000, guid: 4dcdb2020e974154c92a64a5ff508c0d, type: 3}
   hoverColour: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!82 &506314641152177700
 AudioSource:

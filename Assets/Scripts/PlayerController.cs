@@ -10,10 +10,18 @@ public class PlayerController : MonoBehaviour
     //How do I detect distance of player from items?
     //How do I make player have inventory of items collected?
 
-    public bool hasItem = false;
     public Animator anim;
     private Rigidbody rb;
+
     private ItemStore inventory;
+
+    public bool hasBook = false;
+    public bool hasWateringCan = false;
+    public bool hasDaffodil = false;
+    public bool hasSunflower = false;
+    public bool hasMushroom = false;
+    public bool hasBoxOfMushrooms = false;
+    public bool hasBroom = false;
 
     void Start()
     {

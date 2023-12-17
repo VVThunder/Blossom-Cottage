@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionCamera: {fileID: 0}
   forceSize: 10
-  objectName: 
+  objectName: Broom
 --- !u!114 &7994661405535018201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meshRenderer: {fileID: 8661752487918327589}
-  pickupSound: {fileID: 8300000, guid: 4dcdb2020e974154c92a64a5ff508c0d, type: 3}
+  interactSound: {fileID: 8300000, guid: 4dcdb2020e974154c92a64a5ff508c0d, type: 3}
   hoverColour: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!82 &6701035142757879970
 AudioSource:

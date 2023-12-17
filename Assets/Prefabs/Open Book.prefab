@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meshRenderer: {fileID: 4220941706712074556}
-  pickupSound: {fileID: 8300000, guid: 4dcdb2020e974154c92a64a5ff508c0d, type: 3}
+  interactSound: {fileID: 8300000, guid: 4dcdb2020e974154c92a64a5ff508c0d, type: 3}
   hoverColour: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!114 &1594586517448790442
 MonoBehaviour:
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionCamera: {fileID: 0}
   forceSize: 10
-  objectName: 
+  objectName: Open Book
 --- !u!82 &3463272110520863205
 AudioSource:
   m_ObjectHideFlags: 0

@@ -109,7 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionCamera: {fileID: 0}
   forceSize: 10
-  objectName: 
+  objectName: Cooking Stand
 --- !u!114 &1138803474493213369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meshRenderer: {fileID: 644308884908498648}
-  pickupSound: {fileID: 8300000, guid: 4dcdb2020e974154c92a64a5ff508c0d, type: 3}
+  interactSound: {fileID: 8300000, guid: 4dcdb2020e974154c92a64a5ff508c0d, type: 3}
   hoverColour: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!82 &1993972061861586598
 AudioSource:
