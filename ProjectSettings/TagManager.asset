@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Environment
   - Interactable Item
+  - Door
   layers:
   - Default
   - TransparentFX

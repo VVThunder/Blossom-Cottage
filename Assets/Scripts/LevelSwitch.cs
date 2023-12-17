@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class LevelSwitch : MonoBehaviour
 {
-/*
-    public void OnButtonPress()
+
+    public void OnMouseDown()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        if (CompareTag("Door"))
+        {
+            SceneManager.LoadScene(1);
+        }
     }
-*/
+
 }
