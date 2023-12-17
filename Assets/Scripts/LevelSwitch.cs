@@ -8,7 +8,7 @@ public class LevelSwitch : MonoBehaviour
 
     public void OnMouseDown()
     {
-        if (CompareTag("Door"))
+        if (gameObject.CompareTag("Door"))
         {
             SceneManager.LoadScene(1);
         }
