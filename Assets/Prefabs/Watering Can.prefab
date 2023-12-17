@@ -123,7 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionCamera: {fileID: 0}
   forceSize: 10
-  objectName: 
+  objectName: Watering Can
 --- !u!114 &1635033401953714995
 MonoBehaviour:
   m_ObjectHideFlags: 0

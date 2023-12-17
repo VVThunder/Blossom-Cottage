@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: -5060427972621041589}
   - component: {fileID: -8356823279139242186}
   - component: {fileID: 4918571466693197986}
+  - component: {fileID: 2656674948719537434}
   m_Layer: 0
   m_Name: Amanita Mushroom
-  m_TagString: Untagged
+  m_TagString: Interactable Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -100,8 +101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7140e20a2eaea428ae6d92ad1cf37a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meshRenderer: {fileID: 0}
-  pickupSound: {fileID: 0}
+  meshRenderer: {fileID: 1476600315429417597}
+  pickupSound: {fileID: 8300000, guid: 4dcdb2020e974154c92a64a5ff508c0d, type: 3}
   hoverColour: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!114 &-8356823279139242186
 MonoBehaviour:
@@ -116,8 +117,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectionCamera: {fileID: 0}
-  forceSize: 0
-  objectName: 
+  forceSize: 10
+  objectName: Mushroom 1
 --- !u!82 &4918571466693197986
 AudioSource:
   m_ObjectHideFlags: 0
@@ -214,3 +215,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!64 &2656674948719537434
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7913883424532095329}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2534964839176971238, guid: 1f0f132cc1cd02848b19e53739cb45eb, type: 3}

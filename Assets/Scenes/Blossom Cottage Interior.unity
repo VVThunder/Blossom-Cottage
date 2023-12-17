@@ -3389,6 +3389,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6621101578775228890, guid: 6e24275acca7c524593c9a27ffe05235, type: 3}
+      propertyPath: objectName
+      value: Watering Can
+      objectReference: {fileID: 0}
+    - target: {fileID: 6621101578775228890, guid: 6e24275acca7c524593c9a27ffe05235, type: 3}
       propertyPath: selectionCamera
       value: 
       objectReference: {fileID: 1698356122}
@@ -4772,6 +4776,10 @@ PrefabInstance:
       value: Box of Mushrooms
       objectReference: {fileID: 0}
     - target: {fileID: 4886307281658377004, guid: 0169ef1f12b93da48b6799776427ece3, type: 3}
+      propertyPath: objectName
+      value: Box of Mushrooms
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886307281658377004, guid: 0169ef1f12b93da48b6799776427ece3, type: 3}
       propertyPath: selectionCamera
       value: 
       objectReference: {fileID: 1698356122}
@@ -4838,6 +4846,10 @@ PrefabInstance:
       value: Broom
       objectReference: {fileID: 0}
     - target: {fileID: 8015693706007591723, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
+      propertyPath: objectName
+      value: Broom
+      objectReference: {fileID: 0}
+    - target: {fileID: 8015693706007591723, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
       propertyPath: selectionCamera
       value: 
       objectReference: {fileID: 1698356122}
@@ -4899,6 +4911,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8116516268640591379, guid: 8bb0cbfc85c406e488137e736aeb96c6, type: 3}
+      propertyPath: objectName
+      value: Cooking Stand
+      objectReference: {fileID: 0}
+    - target: {fileID: 8116516268640591379, guid: 8bb0cbfc85c406e488137e736aeb96c6, type: 3}
       propertyPath: selectionCamera
       value: 
       objectReference: {fileID: 1698356122}
@@ -4915,6 +4931,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1235868710}
     m_Modifications:
+    - target: {fileID: 1594586517448790442, guid: f1a58f9b9fdd749488867c47328a3c63, type: 3}
+      propertyPath: objectName
+      value: Open Book
+      objectReference: {fileID: 0}
     - target: {fileID: 1594586517448790442, guid: f1a58f9b9fdd749488867c47328a3c63, type: 3}
       propertyPath: selectionCamera
       value: 
