@@ -534,6 +534,7 @@ Transform:
   - {fileID: 2072472113}
   - {fileID: 457184328}
   - {fileID: 57924976}
+  - {fileID: 913922326}
   m_Father: {fileID: 249518956}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &114109700
@@ -1272,9 +1273,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7140e20a2eaea428ae6d92ad1cf37a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 1651866376}
   meshRenderer: {fileID: 342486767}
   interactSound: {fileID: 8300000, guid: 30d50288615dee94b9f3df76355c6cf9, type: 3}
   hoverColour: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  thisDistance: {fileID: 342486763}
+  objectDistance: 5
 --- !u!23 &342486767 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2312374, guid: a76d6dc72bc81434e93a247dcc2fe116, type: 3}
@@ -2984,7 +2988,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 913922326}
   - {fileID: 515592096}
   - {fileID: 4151725995968872978}
   - {fileID: 298872080}
@@ -3249,6 +3252,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1235868710}
     m_Modifications:
+    - target: {fileID: 1635033401953714995, guid: 6e24275acca7c524593c9a27ffe05235, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1651866376}
     - target: {fileID: 2115928394106856991, guid: 6e24275acca7c524593c9a27ffe05235, type: 3}
       propertyPath: m_Name
       value: Watering Can
@@ -3293,6 +3300,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6621101578775228890, guid: 6e24275acca7c524593c9a27ffe05235, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1651866376}
     - target: {fileID: 6621101578775228890, guid: 6e24275acca7c524593c9a27ffe05235, type: 3}
       propertyPath: selectionCamera
       value: 
@@ -4409,10 +4420,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2949917493449402584, guid: 0169ef1f12b93da48b6799776427ece3, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1651866376}
     - target: {fileID: 4472616650967907717, guid: 0169ef1f12b93da48b6799776427ece3, type: 3}
       propertyPath: m_Name
       value: Box of Mushrooms
       objectReference: {fileID: 0}
+    - target: {fileID: 4886307281658377004, guid: 0169ef1f12b93da48b6799776427ece3, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1651866376}
+    - target: {fileID: 4886307281658377004, guid: 0169ef1f12b93da48b6799776427ece3, type: 3}
+      propertyPath: thisDistance
+      value: 
+      objectReference: {fileID: 4151725995968872978}
     - target: {fileID: 4886307281658377004, guid: 0169ef1f12b93da48b6799776427ece3, type: 3}
       propertyPath: selectionCamera
       value: 
@@ -4479,6 +4502,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Broom
       objectReference: {fileID: 0}
+    - target: {fileID: 7994661405535018201, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1651866376}
+    - target: {fileID: 8015693706007591723, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1651866376}
     - target: {fileID: 8015693706007591723, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
       propertyPath: selectionCamera
       value: 
@@ -4494,7 +4525,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1235868710}
+    m_TransformParent: {fileID: 102135198}
     m_Modifications:
     - target: {fileID: 644308884910751768, guid: 8bb0cbfc85c406e488137e736aeb96c6, type: 3}
       propertyPath: m_Name
@@ -4502,15 +4533,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 644308884910791736, guid: 8bb0cbfc85c406e488137e736aeb96c6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 27.323524
+      value: 15.070001
       objectReference: {fileID: 0}
     - target: {fileID: 644308884910791736, guid: 8bb0cbfc85c406e488137e736aeb96c6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.713907
+      value: -22.060001
       objectReference: {fileID: 0}
     - target: {fileID: 644308884910791736, guid: 8bb0cbfc85c406e488137e736aeb96c6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.831453
+      value: 1.6599998
       objectReference: {fileID: 0}
     - target: {fileID: 644308884910791736, guid: 8bb0cbfc85c406e488137e736aeb96c6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4544,7 +4575,10 @@ PrefabInstance:
       propertyPath: selectionCamera
       value: 
       objectReference: {fileID: 1698356122}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8116516268640591379, guid: 8bb0cbfc85c406e488137e736aeb96c6, type: 3}
+    - {fileID: 1138803474493213369, guid: 8bb0cbfc85c406e488137e736aeb96c6, type: 3}
+    - {fileID: 1993972061861586598, guid: 8bb0cbfc85c406e488137e736aeb96c6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4557,6 +4591,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1235868710}
     m_Modifications:
+    - target: {fileID: 851299255274636608, guid: f1a58f9b9fdd749488867c47328a3c63, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1651866376}
+    - target: {fileID: 1594586517448790442, guid: f1a58f9b9fdd749488867c47328a3c63, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1651866376}
     - target: {fileID: 1594586517448790442, guid: f1a58f9b9fdd749488867c47328a3c63, type: 3}
       propertyPath: selectionCamera
       value: 

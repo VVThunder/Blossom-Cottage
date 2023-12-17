@@ -2,13 +2,15 @@ using UnityEngine;
 
 public class ObjectSelectionIndicator : MonoBehaviour
 {
-    //Also how do I make it so item can only be hovered over if player is close enough (Vector3.Distance?)
     //How can I make player turn to look at item when close?
 
+    public GameObject Player;
     public MeshRenderer meshRenderer;
     public AudioClip interactSound;
     private AudioSource sfxAudio;
     public Color hoverColour = Color.gray;
+    [SerializeField] Transform thisDistance;
+    [SerializeField] public float objectDistance;
 
     void Start()
     {
@@ -18,11 +20,15 @@ public class ObjectSelectionIndicator : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        //Changes item colour to faded when cursor is hovered over
-        meshRenderer.material.color = hoverColour;
+        //Detects how close player is to item
+        if (Vector3.Distance(thisDistance.position, Player.transform.position) < objectDistance)
+        {
+            //Changes item colour to faded when cursor is hovered over
+            meshRenderer.material.color = hoverColour;
 
-        //Plays sfx when cursor is hovered over
-        sfxAudio.PlayOneShot(interactSound, 1.0f);
+            //Plays sfx when cursor is hovered over
+            sfxAudio.PlayOneShot(interactSound, 1.0f);
+        }
     }
 
 

@@ -121,9 +121,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7140e20a2eaea428ae6d92ad1cf37a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 0}
   meshRenderer: {fileID: 8378714373252449252}
-  pickupSound: {fileID: 8300000, guid: 4dcdb2020e974154c92a64a5ff508c0d, type: 3}
+  interactSound: {fileID: 8300000, guid: 4dcdb2020e974154c92a64a5ff508c0d, type: 3}
   hoverColour: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  thisDistance: {fileID: 8034794384539761170}
+  objectDistance: 10
 --- !u!114 &8513781305005662498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,9 +139,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42f973a16b72e7a4eb2c8ae33bcae347, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 0}
   selectionCamera: {fileID: 0}
   forceSize: 10
   objectName: Daffodil
+  thisDistance: {fileID: 8034794384539761170}
+  objectDistance: 5
 --- !u!82 &7712001489128933584
 AudioSource:
   m_ObjectHideFlags: 0

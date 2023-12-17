@@ -85,6 +85,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 4214542866471285324}
   m_SourcePrefab: {fileID: 100100000, guid: 07d3790148a41e146b1d676151ef44ed, type: 3}
+--- !u!4 &4220941706709781468 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 07d3790148a41e146b1d676151ef44ed, type: 3}
+  m_PrefabInstance: {fileID: 4220941706710176092}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4220941706710145020 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 07d3790148a41e146b1d676151ef44ed, type: 3}
@@ -102,9 +107,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7140e20a2eaea428ae6d92ad1cf37a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 0}
   meshRenderer: {fileID: 4220941706712074556}
   interactSound: {fileID: 8300000, guid: 4dcdb2020e974154c92a64a5ff508c0d, type: 3}
   hoverColour: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  thisDistance: {fileID: 4220941706709781468}
+  objectDistance: 10
 --- !u!114 &1594586517448790442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,9 +125,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42f973a16b72e7a4eb2c8ae33bcae347, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 0}
   selectionCamera: {fileID: 0}
   forceSize: 10
   objectName: Open Book
+  thisDistance: {fileID: 4220941706709781468}
+  objectDistance: 5
 --- !u!82 &3463272110520863205
 AudioSource:
   m_ObjectHideFlags: 0
