@@ -6,8 +6,10 @@ using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
 public class PlayerController : MonoBehaviour
-
 {
+    //How do I detect distance of player from items?
+    //How do I make player have inventory of items collected?
+
     public bool hasItem = false;
     public Animator anim;
     private Rigidbody rb;
@@ -26,15 +28,14 @@ public class PlayerController : MonoBehaviour
 
     private void Pick_Up()
     {
-        //Check for name of object we have picked up
-        //Play anim of picking up
-
-        //Call audio for pick up here when you pass through a function 
+        //How do I check for name of object we have picked up?
+        //How do I only play animation of picking up here?
+        //How do I make it so audio for pick up is called here when passed through a function in ObjectMouseClick?
         
-        if (Input.GetKeyDown(KeyCode.Mouse0)) //&& (CompareTag ("Interactable Item"))//
+        if (Input.GetKeyDown(KeyCode.Mouse0)) //&& (CompareTag ("Interactable Item"))?//
         {
             this.anim.SetBool("pick up", true);
-            //Debug.Log("pick up");//
+            Debug.Log("pick up");
         }
         else
         {

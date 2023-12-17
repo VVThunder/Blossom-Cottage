@@ -4,6 +4,9 @@ using static UnityEngine.GraphicsBuffer;
 
 public class ObjectMouseClick : MonoBehaviour
 {
+    //How do I make it so item can only be picked up when player is close to it (Vector3.Distance?)
+    //How do I make it so picked up items are stored instead of destroyed and then can appear between scenes?
+
     public Camera selectionCamera;
     public float forceSize;
     private Rigidbody rb;
@@ -21,12 +24,8 @@ public class ObjectMouseClick : MonoBehaviour
 
     private void OnMouseDown()
     {
-        //Check how close the player is to the object before allowing pick up
-
-
-        //Call function from playercontroller saying we have picked up(objectName)
-
-
+        //How do I check how close the player is to the object before allowing pick up
+        //how do I call function from playercontroller saying we have picked up(objectName)
 
         print("You have found an object!");
 
