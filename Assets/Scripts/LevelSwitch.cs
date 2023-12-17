@@ -5,22 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class LevelSwitch : MonoBehaviour
 {
-    //How do I make it so both levels can be switched between in one script?
-    //Right now this one changes to outside if I click on door
-    //I also want to carry over object picked up in scenes but don't know how to do that
+    //How do I carry over object picked up in scenes?
     //Would imagine that would be a different script?
-
-    private void Start()
-    {
-        
-    }
 
     public void OnMouseDown()
     {
-        if (gameObject.CompareTag("Door"))
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+
+        if (sceneName == "Blossom Cottage Interior" && gameObject.CompareTag("Door"))
         {
             SceneManager.LoadScene(1);
         }
-    }
 
+        if (sceneName == "Blossom Cottage Exterior" && gameObject.CompareTag("Door"))
+        {
+            SceneManager.LoadScene(2);
+        }
+       
+    }
 }

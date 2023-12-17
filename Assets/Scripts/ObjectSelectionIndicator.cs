@@ -35,6 +35,6 @@ public class ObjectSelectionIndicator : MonoBehaviour
     {
         //Changes item colour to red when cursor is not hovered over
         //Want to make this original item colour not red - I tried color, material and shader but none work
-        meshRenderer.material.color = Color.red;
+        meshRenderer.material.color = Color.green;
     }
 }

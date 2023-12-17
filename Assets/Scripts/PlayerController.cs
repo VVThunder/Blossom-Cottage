@@ -13,10 +13,13 @@ public class PlayerController : MonoBehaviour
     public bool hasItem = false;
     public Animator anim;
     private Rigidbody rb;
+    private ItemStore inventory;
 
     void Start()
     {
         this.rb = GetComponent<Rigidbody>();
+
+        inventory = new ItemStore();
     }
     void Update()
     {
