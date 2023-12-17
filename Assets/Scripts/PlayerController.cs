@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     public Animator anim;
     private Rigidbody rb;
 
-    private ItemStore inventory;
+    public ParticleSystem fireParticle;
 
     public bool hasBook = false;
     public bool hasWateringCan = false;
@@ -27,7 +27,8 @@ public class PlayerController : MonoBehaviour
     {
         this.rb = GetComponent<Rigidbody>();
 
-        inventory = new ItemStore();
+        GetComponent<GameObject>();
+
     }
     void Update()
     {
@@ -43,7 +44,7 @@ public class PlayerController : MonoBehaviour
         //How do I only play animation of picking up here?
         //How do I make it so audio for pick up is called here when passed through a function in ObjectMouseClick?
 
-        if (Input.GetKeyDown(KeyCode.Mouse0)) //&& (CompareTag ("Interactable Item"))?//
+        if (Input.GetKeyDown(KeyCode.Mouse0)) //(gameObject.CompareTag("Interactable Item"))//
         {
             this.anim.SetBool("pick up", true);
             Debug.Log("pick up");
@@ -67,4 +68,5 @@ public class PlayerController : MonoBehaviour
         this.anim.SetFloat("vertical", verticalAxis);
         this.anim.SetFloat("horizontal", horizontalAxis);
     }
+
 }
