@@ -991,6 +991,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 342486763}
   - {fileID: 372400952}
   - {fileID: 1195105412}
   - {fileID: 102135198}
@@ -1158,6 +1159,127 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14393a9841238c64da0e0b92809698fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &342486763 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 463940, guid: a76d6dc72bc81434e93a247dcc2fe116, type: 3}
+  m_PrefabInstance: {fileID: 1478761719}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &342486764
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342486757}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &342486765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342486757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7140e20a2eaea428ae6d92ad1cf37a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshRenderer: {fileID: 342486767}
+  interactSound: {fileID: 8300000, guid: 30d50288615dee94b9f3df76355c6cf9, type: 3}
+  hoverColour: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+--- !u!23 &342486767 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2312374, guid: a76d6dc72bc81434e93a247dcc2fe116, type: 3}
+  m_PrefabInstance: {fileID: 1478761719}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &372400951
 GameObject:
   m_ObjectHideFlags: 0
@@ -3141,7 +3263,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 249518956}
     m_Modifications:
     - target: {fileID: 180120, guid: a76d6dc72bc81434e93a247dcc2fe116, type: 3}
       propertyPath: m_Name
@@ -3214,6 +3336,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 180120, guid: a76d6dc72bc81434e93a247dcc2fe116, type: 3}
       insertIndex: 3
       addedObject: {fileID: 342486762}
+    - targetCorrespondingSourceObject: {fileID: 180120, guid: a76d6dc72bc81434e93a247dcc2fe116, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 342486765}
+    - targetCorrespondingSourceObject: {fileID: 180120, guid: a76d6dc72bc81434e93a247dcc2fe116, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 342486764}
   m_SourcePrefab: {fileID: 100100000, guid: a76d6dc72bc81434e93a247dcc2fe116, type: 3}
 --- !u!1 &1544911936
 GameObject:
@@ -3344,6 +3472,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1235868710}
     m_Modifications:
+    - target: {fileID: 1635033401953714995, guid: 6e24275acca7c524593c9a27ffe05235, type: 3}
+      propertyPath: interactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4dcdb2020e974154c92a64a5ff508c0d, type: 3}
     - target: {fileID: 2115928394106856991, guid: 6e24275acca7c524593c9a27ffe05235, type: 3}
       propertyPath: m_Name
       value: Watering Can
@@ -4771,6 +4903,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2949917493449402584, guid: 0169ef1f12b93da48b6799776427ece3, type: 3}
+      propertyPath: interactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4dcdb2020e974154c92a64a5ff508c0d, type: 3}
     - target: {fileID: 4472616650967907717, guid: 0169ef1f12b93da48b6799776427ece3, type: 3}
       propertyPath: m_Name
       value: Box of Mushrooms
@@ -4845,6 +4981,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Broom
       objectReference: {fileID: 0}
+    - target: {fileID: 7994661405535018201, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
+      propertyPath: interactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4dcdb2020e974154c92a64a5ff508c0d, type: 3}
     - target: {fileID: 8015693706007591723, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
       propertyPath: objectName
       value: Broom
@@ -4910,6 +5050,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1138803474493213369, guid: 8bb0cbfc85c406e488137e736aeb96c6, type: 3}
+      propertyPath: interactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4dcdb2020e974154c92a64a5ff508c0d, type: 3}
     - target: {fileID: 8116516268640591379, guid: 8bb0cbfc85c406e488137e736aeb96c6, type: 3}
       propertyPath: objectName
       value: Cooking Stand
@@ -4931,6 +5075,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1235868710}
     m_Modifications:
+    - target: {fileID: 851299255274636608, guid: f1a58f9b9fdd749488867c47328a3c63, type: 3}
+      propertyPath: interactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4dcdb2020e974154c92a64a5ff508c0d, type: 3}
     - target: {fileID: 1594586517448790442, guid: f1a58f9b9fdd749488867c47328a3c63, type: 3}
       propertyPath: objectName
       value: Open Book
@@ -4996,7 +5144,6 @@ SceneRoots:
   - {fileID: 1961771413}
   - {fileID: 1651866380}
   - {fileID: 249518956}
-  - {fileID: 1478761719}
   - {fileID: 1235868710}
   - {fileID: 1802388019}
   - {fileID: 852161168}

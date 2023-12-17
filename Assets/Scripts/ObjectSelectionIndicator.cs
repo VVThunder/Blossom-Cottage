@@ -8,7 +8,7 @@ public class ObjectSelectionIndicator : MonoBehaviour
 
 
     public MeshRenderer meshRenderer;
-    public AudioClip pickupSound;
+    public AudioClip interactSound;
     private AudioSource sfxAudio;
     //public Color originalColour;
     public Color hoverColour = Color.gray;
@@ -27,7 +27,7 @@ public class ObjectSelectionIndicator : MonoBehaviour
         meshRenderer.material.color = hoverColour;
 
         //Plays sfx when cursor is hovered over
-        sfxAudio.PlayOneShot(pickupSound, 1.0f);
+        sfxAudio.PlayOneShot(interactSound, 1.0f);
     }
 
 
