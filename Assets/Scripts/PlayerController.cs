@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
         //How do I check for name of object we have picked up?
         //How do I only play animation of picking up here?
         //How do I make it so audio for pick up is called here when passed through a function in ObjectMouseClick?
-        
+
         if (Input.GetKeyDown(KeyCode.Mouse0)) //&& (CompareTag ("Interactable Item"))?//
         {
             this.anim.SetBool("pick up", true);
