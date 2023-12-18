@@ -7,13 +7,10 @@ using static UnityEngine.GraphicsBuffer;
 
 public class PlayerController : MonoBehaviour
 {
-    //How do I detect distance of player from items?
     //How do I make player have inventory of items collected?
 
     public Animator anim;
     private Rigidbody rb;
-
-    public ParticleSystem fireParticle;
 
     public bool hasBook = false;
     public bool hasWateringCan = false;
@@ -23,11 +20,16 @@ public class PlayerController : MonoBehaviour
     public bool hasBoxOfMushrooms = false;
     public bool hasBroom = false;
 
+    public bool interactableItemIsSelected = false;
+
+    private GameObject interactableItems;
+
     void Start()
     {
         this.rb = GetComponent<Rigidbody>();
 
-        GetComponent<GameObject>();
+        GameObject[] interactableItems;
+        interactableItems = GameObject.FindGameObjectsWithTag("Interactable Item");
 
     }
     void Update()
@@ -40,11 +42,11 @@ public class PlayerController : MonoBehaviour
 
     private void Pick_Up()
     {
-        //How do I check for name of object we have picked up?
+        //How do I check for name of object picked up?
         //How do I only play animation of picking up here?
         //How do I make it so audio for pick up is called here when passed through a function in ObjectMouseClick?
 
-        if (Input.GetKeyDown(KeyCode.Mouse0)) //(gameObject.CompareTag("Interactable Item"))//
+        if (Input.GetKeyDown(KeyCode.Mouse0)) //(gameObject.CompareTag("Interactable Item"))?
         {
             this.anim.SetBool("pick up", true);
             Debug.Log("pick up");
@@ -55,6 +57,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    //Controls player movement
     private void Move()
     {
         float verticalAxis = Input.GetAxis("Vertical");

@@ -1301,7 +1301,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1820361475}
-  fireParticle: {fileID: 0}
   hasBook: 0
   hasWateringCan: 0
   hasDaffodil: 0
@@ -2150,6 +2149,7 @@ GameObject:
   - component: {fileID: 876758931}
   - component: {fileID: 876758930}
   - component: {fileID: 876758929}
+  - component: {fileID: 876758932}
   m_Layer: 5
   m_Name: 'Task Canvas '
   m_TagString: Untagged
@@ -2240,6 +2240,20 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &876758932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876758927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d478d53e5032b824786645f36dd5b3e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  taskCompleteText: {fileID: 809842757}
+  taskHintText: {fileID: 854719875}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
