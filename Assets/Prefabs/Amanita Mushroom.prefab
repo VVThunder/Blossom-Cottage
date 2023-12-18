@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1476600315429417597}
   - component: {fileID: -5060427972621041589}
   - component: {fileID: -8356823279139242186}
+  - component: {fileID: 5093098152288932377}
   - component: {fileID: 4918571466693197986}
   - component: {fileID: 2656674948719537434}
   m_Layer: 0
@@ -125,6 +126,19 @@ MonoBehaviour:
   objectName: Mushroom
   thisDistance: {fileID: 5870308947479434120}
   objectDistance: 5
+--- !u!114 &5093098152288932377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7913883424532095329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85bcbf7995b0bcd44bcf21df9cfcfe80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemCount: 1
 --- !u!82 &4918571466693197986
 AudioSource:
   m_ObjectHideFlags: 0

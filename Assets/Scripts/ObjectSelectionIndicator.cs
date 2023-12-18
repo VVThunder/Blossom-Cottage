@@ -31,7 +31,6 @@ public class ObjectSelectionIndicator : MonoBehaviour
         }
     }
 
-
     private void OnMouseExit()
     {
         //Changes item colour back to default when mouse not over it

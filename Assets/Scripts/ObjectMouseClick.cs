@@ -10,7 +10,9 @@ public class ObjectMouseClick : MonoBehaviour
     public Camera selectionCamera;
     public float forceSize;
     private Rigidbody rb;
+
     [SerializeField] private string objectName;
+
     [SerializeField] Transform thisDistance;
     [SerializeField] public float objectDistance;
 

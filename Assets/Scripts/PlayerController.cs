@@ -24,12 +24,16 @@ public class PlayerController : MonoBehaviour
 
     private GameObject interactableItems;
 
+    private ObjectMouseClick objectMouseClickScript;
+
     void Start()
     {
         this.rb = GetComponent<Rigidbody>();
 
         GameObject[] interactableItems;
         interactableItems = GameObject.FindGameObjectsWithTag("Interactable Item");
+
+        //objectMouseClickScript = GameObject.Find("objectName").GetComponent<ObjectMouseClick>();
 
     }
     void Update()
@@ -38,6 +42,12 @@ public class PlayerController : MonoBehaviour
         Pick_Up();
         Move();
 
+        /*
+        if(objectMouseClickScript.gameObject == null)
+        {
+            print("All items found.");
+        }
+        */
     }
 
     private void Pick_Up()
