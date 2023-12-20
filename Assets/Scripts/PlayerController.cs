@@ -7,74 +7,67 @@ using static UnityEngine.GraphicsBuffer;
 
 public class PlayerController : MonoBehaviour
 {
-    //How do I make player have inventory of items collected?
 
     public Animator anim;
     private Rigidbody rb;
 
-   
+    //Interior to exterior items
     public bool hasWateringCan = false;
-    public bool hasDaffodil = false;
-    public bool hasSunflower = false;
- 
     public bool hasBroom = false;
 
-    public bool interactableItemIsSelected = false;
-
-    private GameObject interactableItems;
-
-    private ObjectMouseClick objectMouseClickScript;
+    //Exterior to interior items
+    public bool hasDaffodil = false;
+    public bool hasSunflower = false;
+    public bool hasMushroom = false;
 
     void Start()
     {
+
         this.rb = GetComponent<Rigidbody>();
-
-        GameObject[] interactableItems;
-        interactableItems = GameObject.FindGameObjectsWithTag("Interactable Item");
-
-        //objectMouseClickScript = GameObject.Find("objectName").GetComponent<ObjectMouseClick>();
 
     }
     void Update()
     {
-
-        //Pick_Up();
         Move();
-
-        /*
-        if(objectMouseClickScript.gameObject == null)
-        {
-            print("All items found.");
-        }
-        */
     }
 
     public void Pick_Up(string objectName)
     {
-        //How do I check for name of object picked up?
-        //How do I only play animation of picking up here?
-        //How do I make it so audio for pick up is called here when passed through a function in ObjectMouseClick?
 
         switch (objectName)
         {
             case "Daffodil":
-                    {
+                {
                     hasDaffodil = true;
                     PlayerPrefs.SetInt("Daffodil", 1);
                     break;
                 }
+            case "Sunflower":
+                {
+                    hasSunflower = true;
+                    PlayerPrefs.SetInt("Sunflower", 1);
+                    break;
+                }
+            case "Mushroom":
+                {
+                    hasMushroom = true;
+                    PlayerPrefs.SetInt("Mushroom", 1);
+                    break;
+                }
+            case "Broom":
+                {
+                    hasBroom = true;
+                    PlayerPrefs.SetInt("Broom", 1);
+                    break;
+                }
+            case "Watering Can":
+                {
+                    hasWateringCan = true;
+                    PlayerPrefs.SetInt("Watering Can", 1);
+                    break;
+                }
         }
 
-
-       // if (Input.GetKeyDown(KeyCode.Mouse0)) //(gameObject.CompareTag("Interactable Item"))?
-        //{
-            this.anim.SetBool("pick up", true);
-            Debug.Log("pick up");
-       // }
-       // else
-        //{
-           // this.anim.SetBool("pick up", false);
-        //}
     }
 
     //Controls player movement

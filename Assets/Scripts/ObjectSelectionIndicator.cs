@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class ObjectSelectionIndicator : MonoBehaviour
 {
-    //How can I make player turn to look at item when close?
 
     public GameObject Player;
     public MeshRenderer meshRenderer;

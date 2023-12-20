@@ -13,6 +13,10 @@ PrefabInstance:
       value: Open Book
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 07d3790148a41e146b1d676151ef44ed, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 07d3790148a41e146b1d676151ef44ed, type: 3}
       propertyPath: m_TagString
       value: Interactable Item
       objectReference: {fileID: 0}
@@ -128,6 +132,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   selectionCamera: {fileID: 0}
   forceSize: 10
+  anim: {fileID: 0}
   objectName: Open Book
   thisDistance: {fileID: 4220941706709781468}
   objectDistance: 5

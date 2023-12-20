@@ -423,10 +423,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskCompleteText: {fileID: 809842757}
   taskHintText: {fileID: 854719875}
+  Daffodil: {fileID: 2144178322}
+  Sunflower: {fileID: 1777536455935878938}
+  wateringCan: {fileID: 2130877243}
+  Broom: {fileID: 181553644}
+  Mushroom: {fileID: 1286462262}
+  daffodilVaseRed: {fileID: 1896441399841116307, guid: f91279e3852327043b7636d49e09df45, type: 3}
+  daffodilVaseBlue: {fileID: 1916165510311227284, guid: 72b7f7d614696674980856603e7d57f6, type: 3}
+  sunflowerVase: {fileID: 5381780124177966084, guid: 59021877faa547e4482c6932a7b0db99, type: 3}
+  boxOfMushrooms: {fileID: 4472616650967907717, guid: 0169ef1f12b93da48b6799776427ece3, type: 3}
+  openBook: {fileID: 4220941706710145020, guid: f1a58f9b9fdd749488867c47328a3c63, type: 3}
   items:
   - {fileID: 1286462262}
   - {fileID: 1777536455935878938}
   - {fileID: 2144178322}
+  - {fileID: 2130877243}
+  - {fileID: 181553644}
 --- !u!4 &97900035
 Transform:
   m_ObjectHideFlags: 0
@@ -520,6 +532,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b71b0f8d2f881c743a85228f3030d1cb, type: 3}
+--- !u!1 &181553644 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6372973776653405138, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
+  m_PrefabInstance: {fileID: 1093113009}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &184621391 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5984978459928004152, guid: 6e24275acca7c524593c9a27ffe05235, type: 3}
@@ -2436,6 +2453,79 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b71b0f8d2f881c743a85228f3030d1cb, type: 3}
+--- !u!1001 &1093113009
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1965719089}
+    m_Modifications:
+    - target: {fileID: 2779239201257937188, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779239201257937188, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -34
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779239201257937188, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779239201257937188, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9392279
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779239201257937188, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.1656112
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779239201257937188, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.29613733
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779239201257937188, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.052217
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779239201257937188, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779239201257937188, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779239201257937188, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6372973776653405138, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
+      propertyPath: m_Name
+      value: Broom
+      objectReference: {fileID: 0}
+    - target: {fileID: 6372973776653405138, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6372973776653405138, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7994661405535018201, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
+    - {fileID: 8015693706007591723, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
+    - {fileID: 6701035142757879970, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
+--- !u!4 &1093113010 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2779239201257937188, guid: 87ab10a2bb8fa4b4590573453cf63a70, type: 3}
+  m_PrefabInstance: {fileID: 1093113009}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1095717242 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6239969156481072347, guid: b71b0f8d2f881c743a85228f3030d1cb, type: 3}
@@ -2810,6 +2900,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 514868047}
     m_Modifications:
     - target: {fileID: -8356823279139242186, guid: 54634b08eb89df54c9ad822642f40652, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 2006122554}
+    - target: {fileID: -8356823279139242186, guid: 54634b08eb89df54c9ad822642f40652, type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 749721228}
@@ -2865,7 +2959,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5093098152288932377, guid: 54634b08eb89df54c9ad822642f40652, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4329,6 +4424,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Watering Can
       objectReference: {fileID: 0}
+    - target: {fileID: 2115928394106856991, guid: 6e24275acca7c524593c9a27ffe05235, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115928394106856991, guid: 6e24275acca7c524593c9a27ffe05235, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 5984978459928004152, guid: 6e24275acca7c524593c9a27ffe05235, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.973524
@@ -4594,6 +4697,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 184621391}
+  - {fileID: 1093113010}
   m_Father: {fileID: 1242267967}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1982097711
@@ -4794,6 +4898,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9050824916289506958, guid: 9e233e4f89ad60b448af75ab01971d54, type: 3}
   m_PrefabInstance: {fileID: 1996411150}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &2006122554 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3546057345944808999, guid: 41195c0f7ceba7b4f98fcc512f506a4c, type: 3}
+  m_PrefabInstance: {fileID: 6268558848641747519}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2056116254 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6239969156481072347, guid: b71b0f8d2f881c743a85228f3030d1cb, type: 3}
@@ -4933,6 +5042,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2108194468}
   m_CullTransparentMesh: 1
+--- !u!1 &2130877243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2115928394106856991, guid: 6e24275acca7c524593c9a27ffe05235, type: 3}
+  m_PrefabInstance: {fileID: 1883407760}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2144178321
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4990,6 +5104,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8513781305005662498, guid: 1579be3c79e82eb42b4aff1d69f941b5, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 2006122554}
+    - target: {fileID: 8513781305005662498, guid: 1579be3c79e82eb42b4aff1d69f941b5, type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 749721228}
@@ -4997,7 +5115,8 @@ PrefabInstance:
       propertyPath: selectionCamera
       value: 
       objectReference: {fileID: 963194227}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3391856077254562064, guid: 1579be3c79e82eb42b4aff1d69f941b5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5060,6 +5179,10 @@ PrefabInstance:
       value: Sunflower
       objectReference: {fileID: 0}
     - target: {fileID: 4727938524798369085, guid: 46917e708b5fa284db6940b514dcc099, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 2006122554}
+    - target: {fileID: 4727938524798369085, guid: 46917e708b5fa284db6940b514dcc099, type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 749721228}
@@ -5071,7 +5194,8 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 749721228}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7504879329946326162, guid: 46917e708b5fa284db6940b514dcc099, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5131,6 +5255,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5434648746450667229, guid: 41195c0f7ceba7b4f98fcc512f506a4c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7019596749443269029, guid: 41195c0f7ceba7b4f98fcc512f506a4c, type: 3}
+      propertyPath: interactableItemIsSelected
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
