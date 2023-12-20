@@ -9,8 +9,9 @@ public class GameManager : MonoBehaviour
 {
     public TextMeshProUGUI taskCompleteText;
     public TextMeshProUGUI taskHintText;
+    public TextMeshProUGUI itemsCollectedText;
 
-    private int itemsCollected;
+    public static int itemsCollected;
 
     public GameObject Daffodil;
     public GameObject Sunflower;
@@ -22,6 +23,7 @@ public class GameManager : MonoBehaviour
     public GameObject sunflowerVase;
     public GameObject boxOfMushrooms;
     public GameObject openBook;
+    private ObjectMouseClick ObjectMouseClick;
 
     public List<GameObject> items;
 
@@ -35,7 +37,6 @@ public class GameManager : MonoBehaviour
             if (hasDaffodil == 1)
             {
                 Debug.Log("You have the Daffodil!");
-                itemsCollected = +1;
                 daffodilVaseRed.SetActive(true);
                 daffodilVaseBlue.SetActive(true);
             }
@@ -48,7 +49,6 @@ public class GameManager : MonoBehaviour
             if (hasSunflower == 1)
             {
                 Debug.Log("You have the Sunflower!");
-                itemsCollected = +1;
                 sunflowerVase.SetActive(true);
                 Sunflower.SetActive(true);
             }
@@ -61,7 +61,6 @@ public class GameManager : MonoBehaviour
             if (hasMushroom == 1)
             {
                 Debug.Log("You have the Mushroom!");
-                itemsCollected = +1;
                 boxOfMushrooms.SetActive(true);
             }
             else
@@ -78,7 +77,6 @@ public class GameManager : MonoBehaviour
             if (hasWateringCan == 1)
             {
                 Debug.Log("You have the Watering Can!");
-                itemsCollected = +1;
                 wateringCan.SetActive(true);
                 Daffodil.SetActive(false);
                 Sunflower.SetActive(false);
@@ -93,7 +91,6 @@ public class GameManager : MonoBehaviour
             if (hasBroom == 1)
             {
                 Debug.Log("You have the Broom!");
-                itemsCollected = +1;
                 Broom.SetActive(true);
                 Daffodil.SetActive(false);
                 Sunflower.SetActive(false);
@@ -113,12 +110,18 @@ public class GameManager : MonoBehaviour
         taskHintText.gameObject.SetActive(true);
         taskCompleteText.gameObject.SetActive(false);
         itemsCollected = 0;
-        GameObject.FindGameObjectsWithTag("Environment");
+        UpdateItemsCollected(0);
     }
 
-    public void GameComplete()
+    public void UpdateItemsCollected(int itemsToAdd)
     {
-        if (itemsCollected == 5)
+        itemsCollected += itemsToAdd;
+        itemsCollectedText.text = "Items Collected: " + itemsCollected;
+    }
+
+    void Update()
+    {
+        if (itemsCollected == 3)
         {
             taskCompleteText.gameObject.SetActive(true);
             taskHintText.gameObject.SetActive(false);
