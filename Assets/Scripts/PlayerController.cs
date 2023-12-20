@@ -12,12 +12,11 @@ public class PlayerController : MonoBehaviour
     public Animator anim;
     private Rigidbody rb;
 
-    public bool hasBook = false;
+   
     public bool hasWateringCan = false;
     public bool hasDaffodil = false;
     public bool hasSunflower = false;
-    public bool hasMushroom = false;
-    public bool hasBoxOfMushrooms = false;
+ 
     public bool hasBroom = false;
 
     public bool interactableItemIsSelected = false;
@@ -39,7 +38,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
-        Pick_Up();
+        //Pick_Up();
         Move();
 
         /*
@@ -50,21 +49,32 @@ public class PlayerController : MonoBehaviour
         */
     }
 
-    private void Pick_Up()
+    public void Pick_Up(string objectName)
     {
         //How do I check for name of object picked up?
         //How do I only play animation of picking up here?
         //How do I make it so audio for pick up is called here when passed through a function in ObjectMouseClick?
 
-        if (Input.GetKeyDown(KeyCode.Mouse0)) //(gameObject.CompareTag("Interactable Item"))?
+        switch (objectName)
         {
+            case "Daffodil":
+                    {
+                    hasDaffodil = true;
+                    PlayerPrefs.SetInt("Daffodil", 1);
+                    break;
+                }
+        }
+
+
+       // if (Input.GetKeyDown(KeyCode.Mouse0)) //(gameObject.CompareTag("Interactable Item"))?
+        //{
             this.anim.SetBool("pick up", true);
             Debug.Log("pick up");
-        }
-        else
-        {
-            this.anim.SetBool("pick up", false);
-        }
+       // }
+       // else
+        //{
+           // this.anim.SetBool("pick up", false);
+        //}
     }
 
     //Controls player movement

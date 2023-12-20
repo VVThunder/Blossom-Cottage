@@ -13,7 +13,23 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI taskHintText;
     private int itemsCollected;
 
-
+    public List<GameObject> items;
+    private void Awake()
+    {
+        if(SceneManager.GetActiveScene().name == "Blossom Cottage Interior")
+        {
+            int hasDaffodil = PlayerPrefs.GetInt("Daffodil");
+            if (hasDaffodil == 1)
+            {
+                Debug.Log("You have the Daffodil!");
+            }
+            else
+            {
+                Debug.Log("You do not have have the Daffodil!");
+            }
+        }
+        
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +48,10 @@ public class GameManager : MonoBehaviour
         {
             taskCompleteText.gameObject.SetActive(true);
         }
+    }
+    private void OnApplicationQuit()
+    {
+        PlayerPrefs.DeleteAll();
     }
 
 }

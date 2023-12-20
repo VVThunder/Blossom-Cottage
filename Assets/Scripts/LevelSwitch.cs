@@ -6,8 +6,12 @@ using UnityEngine.SceneManagement;
 public class LevelSwitch : MonoBehaviour
 {
     //How do I carry over object picked up in scenes?
+    PlayerController playerController;
     //Would imagine that would be a different script?
-
+    private void Start()
+    {
+        playerController =GameObject.Find("Player").GetComponent<PlayerController>();
+    }
     public void OnMouseDown()
     {
         Scene currentScene = SceneManager.GetActiveScene();
@@ -15,6 +19,7 @@ public class LevelSwitch : MonoBehaviour
 
         if (sceneName == "Blossom Cottage Interior" && gameObject.CompareTag("Door"))
         {
+
             SceneManager.LoadScene(1);
         }
 

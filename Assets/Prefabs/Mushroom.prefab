@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4918571466693197986}
   - component: {fileID: 2656674948719537434}
   m_Layer: 0
-  m_Name: Amanita Mushroom
+  m_Name: Mushroom
   m_TagString: Interactable Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

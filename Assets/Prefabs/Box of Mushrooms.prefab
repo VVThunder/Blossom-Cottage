@@ -130,7 +130,7 @@ MonoBehaviour:
   selectionCamera: {fileID: 0}
   forceSize: 10
   objectName: Box of Mushrooms
-  thisDistance: {fileID: 0}
+  thisDistance: {fileID: 671285903856623728}
   objectDistance: 5
 --- !u!114 &2949917493449402584
 MonoBehaviour:

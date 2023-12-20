@@ -10,7 +10,7 @@ public class ObjectMouseClick : MonoBehaviour
     public Camera selectionCamera;
     public float forceSize;
     private Rigidbody rb;
-
+    private PlayerController playerController;
     [SerializeField] private string objectName;
 
     [SerializeField] Transform thisDistance;
@@ -19,6 +19,7 @@ public class ObjectMouseClick : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        playerController = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
     void Update()
@@ -34,7 +35,7 @@ public class ObjectMouseClick : MonoBehaviour
         if (Vector3.Distance(thisDistance.position, Player.transform.position) < objectDistance)
         {
             print("You have found an object!");
-
+            playerController.Pick_Up(objectName);
             // Destroys item when clicked on
             Destroy(gameObject);
         }
